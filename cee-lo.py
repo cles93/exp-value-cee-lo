@@ -10,7 +10,7 @@ for i in tqdm(range(10000000)):
     actPlayer = "bank"
 
     while True:
-        # find legit roll
+        # get valid roll
         while True:
             roll = sorted(random.choices(dice, k=3))
             if roll[0] != roll[1] != roll[2] and roll not in [[1, 2, 3], [4, 5, 6]]:
